@@ -31,7 +31,7 @@ public class Base {
 		cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, "25");
 		cap.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "io.appium.android.apis");
 		cap.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, "io.appium.android.apis.ApiDemos");
-		cap.setCapability(MobileCapabilityType.CLEAR_SYSTEM_FILES, true);
+		cap.setCapability("clearSystemFiles", true);
 
 		//cap.setCapability(MobileCapabilityType.APP, fs.getAbsolutePath());
 		AndroidDriver <AndroidElement> driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
